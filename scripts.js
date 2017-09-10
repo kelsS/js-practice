@@ -59,3 +59,28 @@ console.log(name + ' ' + job + ' ' + age + ' ' + isMarried);
 
 // Better sentence
 console.log(name + ' is a ' + age + ' year old ' + job + '.' + ' Is she married? ' + isMarried + '.');
+
+// Can change the value of variables
+// This is called variable mutation
+
+age = 30;
+job = 'Software Engineer';
+isMarried = true;
+console.log(name + ' is a ' + age + ' year old ' + job + '.' + ' Is she married? ' + isMarried + '.');
+// output: Kelsey is a 30 year old Software Engineer. Is she married? true.
+// Now variable values are mutated
+
+// Our code is read in a sequence of instructions from line to line by the client (browser).
+
+// Get data from the console
+
+//define a variable
+var lastName = prompt('Enter your last name.');
+// prompt(); causes a dialog window to pop up and allow a user to enter data
+console.log(lastName);
+// logs whatever was typed into dialog window
+// alert(); is used to display a message to the user
+// prompt() vs. alert()
+// prompt is used to get user input
+// alert is used for message pop ups and debugging
+alert(name + ' is a ' + age + ' year old ' + job + '.' + ' Is she married? ' + isMarried + '.');
