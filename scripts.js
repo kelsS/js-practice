@@ -232,11 +232,57 @@ if (isMarried === 'yes') {
 // if/else statements allow us to execute code based on conditions
 
 // Change to use boolean
+// isMarried = false;
+// if(isMarried) {
+//     console.log('yes');
+// } else {
+//     console.log('no');
+// }
+// why does this work?
+// the if statement wants a true or false value which is the bolean data type in JS
+
+// Can write this code simpler
 isMarried = false;
 if(isMarried) {
     console.log('yes');
-} else {
-    console.log('no');
 }
-// why does this work?
-// the if statement wants a true or false value which is the bolean data type in JS
+
+// without else defined if condition evaluates to false then nothing gets executed (which means nothing happens)
+
+// the else is not necessary but can be very useful
+
+/**
+ * 2 types of Comparison Operators
+ */
+
+ // Double equal --> ==
+ // Triple equal --> ===
+
+ // Double Equal:
+ // does type coercion
+
+ // Triple Equal (Strictly equal):
+ // does NOT do type coercion
+
+ if (23 == "23") {
+     console.log('using double equal')
+ }
+// Type coercion with the == means that this condition will evaluate to true so console.log will be executed
+// This allows JS to decide that 23 the number is equal to "23" the string even though they are different data types
+ // Double equals allows JS to use type coercion (automatically converting a variable from one data type to another one)
+
+ // Triple Equals (Stops type coercion)
+ if (23 === "23") {
+    console.log('using double equal')
+}
+// === tells JS not to use type coercion
+// So this if statement will evaluate to false because 23 the number is a different data type from "23" the string
+// So the console.log will not be executed
+
+// To avoid bugs it is best to almost always use the Triple Equals (Strictly Equal) === comparison operator
+
+/**
+ * Boolean Logic & Switch Statements
+ */
+
+ 
