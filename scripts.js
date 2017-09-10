@@ -119,12 +119,13 @@ console.log(birthYear);
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
  * 
  * Operators with a higher precedence are executed first
- */
+ **/
 
+/*
 var ageKelsey = 24;
 var ageKaitlyn = 24;
 ageJohn = 3 + 5 * 4 - 6;
-
+*/
 // What is the operation execution of this sequence?
 
 // First --> 5 * 4
@@ -132,7 +133,8 @@ ageJohn = 3 + 5 * 4 - 6;
 
 /**
  * To change the operation precedence you wrap the operations you want executed first with parentheses
- */
+ **/
+/*
 ageKelsey = (3 + 5) * 4 - 6;
 console.log(ageKelsey);
 // In this sequence the addition will be executed first
@@ -142,25 +144,27 @@ console.log(ageKelsey);
 /**
  * You can define the age of both people at the same time
  * Because the = operator has the lowest precedence, it will be executed last
- */
-ageKelsey = ageKaitlyn = (3 + 5) * 4 - 6;
+ **/
+
+//ageKelsey = ageKaitlyn = (3 + 5) * 4 - 6;
 /**
  * Which = operator will be executed first?
  * This is determined by "Associativity"
  * left-to-right or right-to-left
  * Assignment operators are executed right-to-left
- */
+ **/
 //ageKelsey = ageKaitlyn = 26
 //ageKelsey = 26
 /**
  * if the assignment operator was executed left-to-right then ageKelsey would have equaled 24 because ageKelsey was original defined first
- */
-console.log(ageKelsey);
+ **/
+//console.log(ageKelsey);
 
 /**
  * Increment Operator
- */
+ **/
 
+/*
  ageKelsey++;
  // adds 1 to the age of Kelsey
  console.log(ageKelsey);
@@ -172,9 +176,67 @@ console.log(ageKelsey);
 
  /**
   * Multiplication Operator
-  */
+  **/
+
+/*
   ageKaitlyn *= 2;
   // takes the age of Kelsey and multiplies it by 2
   console.log(ageKaitlyn);
   // Same as writing:
   ageKaitlyn = ageKaitlyn * 2;
+*/
+/**
+* if/else statements (control structures)
+* Allow us to execute only certain parts of the code and/or to execute some parts multiple times
+*/
+
+// if/else statements
+
+var name = 'Jim';
+var age = '26';
+var isMarried = 'No';
+
+if (isMarried === 'yes') {
+    //this evaluates to false
+    console.log(name + ' is married.');
+} else {
+    // bc if (is false) the else is executed
+    console.log(name + ' is not married.');
+}
+// output: Jim is not married.
+
+// Change isMarred to true
+isMarried = 'yes';
+
+if (isMarried === 'yes') {
+    console.log(name + ' is married.');
+} else {
+    console.log(name + ' is not married.');
+}
+// output: Jim is married.
+
+/**
+ * if (condition) { 
+ *  //code to do something
+ * }
+ */
+
+// The condition needs to be evaluated to true, so that this part of the if statement gets executed
+
+// If the condition evaluates to false, then the else part gets executed
+
+// Comparison operator -> ===
+// === means strictly equals
+// Returns a booleans ( true or false value)
+
+// if/else statements allow us to execute code based on conditions
+
+// Change to use boolean
+isMarried = false;
+if(isMarried) {
+    console.log('yes');
+} else {
+    console.log('no');
+}
+// why does this work?
+// the if statement wants a true or false value which is the bolean data type in JS
