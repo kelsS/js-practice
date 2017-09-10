@@ -38,6 +38,7 @@
 
 // We can declare a variable or multiple and not define it (them)immediately
 
+/*
 var job, isMarried;
 // 2 currently undefined variables
 console.log(job);
@@ -84,3 +85,96 @@ console.log(lastName);
 // prompt is used to get user input
 // alert is used for message pop ups and debugging
 alert(name + ' is a ' + age + ' year old ' + job + '.' + ' Is she married? ' + isMarried + '.');
+*/
+
+/**
+ * Operators
+ */
+
+// Find out the year of someone's birth
+
+// JS code to echo current year
+var currentYear = new Date().getFullYear();
+console.log(currentYear);
+var birthYear = currentYear - 24;
+
+
+birthYear = currentYear - 24 * 2;
+console.log(birthYear);
+// First JS does the multiplication of 24 * 2
+// Then Subtracts the result of the operation from the current year (in this case 2017)
+
+// Why does JS do the multiplication operation first then the subtraction operation?
+
+// This is the concept called Precedents of Operators
+// In JS there is Operator Precedents
+// Defines which operators are preformed first or executed first in the sequence
+// As well as which operations are executed after
+
+// Multiplication always comes before subtraction in math
+// But in JS we do not always know which operations will be executed first
+
+/**
+ * Operator Precedents Cheat Sheet Resource
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+ * 
+ * Operators with a higher precedence are executed first
+ */
+
+var ageKelsey = 24;
+var ageKaitlyn = 24;
+ageJohn = 3 + 5 * 4 - 6;
+
+// What is the operation execution of this sequence?
+
+// First --> 5 * 4
+// Then the remaining operations would be executed.
+
+/**
+ * To change the operation precedence you wrap the operations you want executed first with parentheses
+ */
+ageKelsey = (3 + 5) * 4 - 6;
+console.log(ageKelsey);
+// In this sequence the addition will be executed first
+// Then the rest of the operations will be executed
+// Parentheses is called "grouping"
+
+/**
+ * You can define the age of both people at the same time
+ * Because the = operator has the lowest precedence, it will be executed last
+ */
+ageKelsey = ageKaitlyn = (3 + 5) * 4 - 6;
+/**
+ * Which = operator will be executed first?
+ * This is determined by "Associativity"
+ * left-to-right or right-to-left
+ * Assignment operators are executed right-to-left
+ */
+//ageKelsey = ageKaitlyn = 26
+//ageKelsey = 26
+/**
+ * if the assignment operator was executed left-to-right then ageKelsey would have equaled 24 because ageKelsey was original defined first
+ */
+console.log(ageKelsey);
+
+/**
+ * Increment Operator
+ */
+
+ ageKelsey++;
+ // adds 1 to the age of Kelsey
+ console.log(ageKelsey);
+ // Same as writing:
+ ageKelsey = ageKelsey + 1;
+ console.log(ageKelsey);
+
+ // Incrementing is useful for Loops
+
+ /**
+  * Multiplication Operator
+  */
+  ageKaitlyn *= 2;
+  // takes the age of Kelsey and multiplies it by 2
+  console.log(ageKaitlyn);
+  // Same as writing:
+  ageKaitlyn = ageKaitlyn * 2;
