@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules
+bower_components
+
+# Compiled
+# dist
+# dist/**/*
+
+2-JS-Basics/**/*
+
+.DS_Store
+__MACOSX
+.zip
+.sass-cache
+.publish
+Desktop.ini
+npm-debug.log
+**/generated/_icons.sass
