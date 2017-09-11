@@ -285,4 +285,103 @@ if(isMarried) {
  * Boolean Logic & Switch Statements
  */
 
+ var age = 16;
+  /**
+  * Want statement that tells us if the age is under 20 then the person is a teenager
+  * if the age is greater than 20 then the person is an adult
+  */
  
+ if (age < 20) {
+     // age is less than 20
+    console.log('Person is a teenager');
+ } else {
+    console.log('Person is an adult');
+ }
+
+// If you change the age to be greater than 20 then teh statement evaluates to true
+
+age = 24;
+if (age < 20) {
+    // age is less than 20
+   console.log('The person is a teenager');
+} else {
+   console.log('The person is an adult');
+}
+// the else statement is executed
+
+/**
+ * Comparison Operators
+ */
+
+/** 
+ ==
+ ===
+ < (less than)
+ > (greater than)
+ <= (less than or equal to)
+ >= (greater than or eqaul to)
+**/
+
+/**
+ * Boolean Logic
+ *  - a branch of computer science that deals with true and false values
+ *  - very important in coding
+ */
+
+/** Logic operators:
+    - most important logic operators
+    AND (&&) => true if ALL are true
+    OR (||) => true if ONE is true
+    NOT(!) => inverts true/false value
+*/
+
+// Look at truth tables
+// AND (&&) Logic Table
+    // we have 2 variables -> a and b
+    // only if var a and var b are both true
+    // the expression a and b will become true
+    // in all other cases the result will be false
+    // a and be MUST be true
+    // if a or b is false then a and b will become false in the end
+    // Same applies if more than 2 vars are present
+    // only if all vars are true the and expression will also become true
+
+    // OR(||) Logic Table
+        /**
+         * With the OR operator it is enough that one of the vars are true in order to make a or b become true
+         * Only a or b needs to be true
+         * result will only be false if BOTH vars are false
+         * works the same way with multiple vars
+         * it is enough for one var to be true to make the final result true
+         */
+
+    // NOT(!) Logic Table
+        /**
+         * Inverts the true or false value of the variable
+         * if var a is true then not a is false
+         * if var a is false then not a is true
+         */
+// define var for age with value
+var age = 16;
+age >= 20; // => false
+age < 30; // => true
+!(age < 30); // => false
+
+age >= 20 && age < 30; // => false
+age >= 20 || age < 30; // => true
+
+/**
+ * We want logi here that says the person is a young adultif they are between 20 and 30 years old
+ */
+var age = 25;
+// execute the if when its condition is true
+if (age < 20) {
+    console.log('This person is under 20 years old');
+    // if it is false execute the else if
+} else if (age > 20 && age < 30) {
+    console.log('This person is between 20 and 30 years old');
+    // if the if statement and the else if are false execute the else statement
+} else {
+    console.log('This person is an adult')
+}
+
